@@ -1,13 +1,23 @@
-import Image from "next/image";
+"use server";
+import { signIn, auth } from "@/auth";
+import { SignInButton } from "@/components/sign-in";
 import Link from "next/link";
+import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const session = await auth();
+  if (session?.user) {
+    return (
+      <div>
+        <Link href="/user-info"> User Info</Link>
+      </div>
+    );
+  }
+
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <nav>
-                <Link href="/donations">Donations</Link> |{" "}
-                <Link href="/services">Services</Link>
-            </nav>
+      <p> You're not signed in! </p>
+      <SignInButton />
     </div>
   );
 }
