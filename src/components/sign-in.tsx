@@ -3,5 +3,10 @@ import { Button } from "@/components/ui/button";
 import { login } from "@/lib/actions/auth";
 
 export const SignInButton = () => {
-  return <Button onClick={() => login()}> Sign In with Github </Button>;
+  return (
+    <Button variant="outline" className="w-full" onClick={() => login()}>
+      {" "}
+      Sign In with Github{" "}
+    </Button>
+  );
 };

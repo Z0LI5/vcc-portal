@@ -1,8 +1,8 @@
 "use server";
 import { signIn, auth } from "@/auth";
-import { SignInButton } from "@/components/sign-in";
 import Link from "next/link";
 import Image from "next/image";
+import { LoginCard } from "@/components/login-card";
 
 export default async function Home() {
   const session = await auth();
@@ -15,9 +15,8 @@ export default async function Home() {
   }
 
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <p> You're not signed in! </p>
-      <SignInButton />
+    <div className="justify-items-center p-8 flex-col">
+      <LoginCard />
     </div>
   );
 }
