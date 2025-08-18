@@ -15,7 +15,11 @@ export default async function Home() {
   }
 
   return (
-    <div className="justify-items-center p-8 flex-col">
+    <div className="justify-items-center p-5 flex-col">
+      <h1 className="font-bold text-3xl pb-10">
+        {" "}
+        Vedic Cultural Center Portal
+      </h1>
       <LoginCard />
     </div>
   );
