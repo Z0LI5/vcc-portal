@@ -10,9 +10,9 @@ import {
 
 export function NavBar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex items-center justify-between rounded-2xl border border-white/20 bg-white/30 backdrop-blur-lg shadow-lg py-3 px-6">
+    <div className="fixed w-screen top-0 right-0 z-50">
+      <div className="">
+        <div className="flex w-screen items-center justify-between  border-0 bg-black backdrop-blur-lg shadow-lg py-3 px-6">
           {/* Brand / Logo */}
           <Link
             href="/"
