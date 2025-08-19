@@ -46,7 +46,12 @@ export default async function Home() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cover bg-center relative">
+    <div
+      className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
+      style={{
+        backgroundImage: "url('https://picsum.photos/2560/1440')",
+      }}
+    >
       <div className="absolute inset-0 bg-black/40" /> {/* dark overlay */}
       <Card className="relative w-full max-w-lg bg-white/30 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl">
         <CardHeader>

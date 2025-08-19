@@ -21,7 +21,7 @@ export const LoginCard = () => {
           Enter your email below to login to your account
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      {/* <CardContent>
         <form>
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
@@ -47,11 +47,11 @@ export const LoginCard = () => {
             </div>
           </div>
         </form>
-      </CardContent>
+      </CardContent> */}
       <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full">
+        {/* <Button type="submit" className="w-full">
           Login
-        </Button>
+        </Button> */}
         <SignInButton />
       </CardFooter>
     </Card>
