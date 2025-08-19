@@ -6,7 +6,7 @@ export const SignInButton = () => {
   return (
     <Button variant="outline" className="w-full" onClick={() => login()}>
       {" "}
-      Sign In with Github{" "}
+      Sign In with Google{" "}
     </Button>
   );
 };
