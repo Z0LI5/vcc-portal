@@ -14,9 +14,9 @@ import { SignInButton } from "./sign-in";
 
 export const LoginCard = () => {
   return (
-    <Card className="w-full max-w-sm">
+    <Card>
       <CardHeader>
-        <CardTitle>Login to your account</CardTitle>
+        <CardTitle className="justify-center">Login to your account</CardTitle>
         <CardDescription>
           Enter your email below to login to your account
         </CardDescription>
