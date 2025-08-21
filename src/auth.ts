@@ -8,4 +8,5 @@ import { firestore } from "./lib/firestore";
 
 export const { auth, handlers, signIn, signOut } = NextAuth({
   providers: [GitHub, Google],
+  adapter: FirestoreAdapter(firestore),
 });
