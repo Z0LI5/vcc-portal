@@ -3,6 +3,7 @@ import type { NextRequest } from "next/server";
 import { auth } from "@/auth";
 
 const protectedRoutes = ["/user-info", "/donations", "/account", "/services"];
+const secret = process.env.NEXTAUTH_SECRET;
 
 export default async function middleware(request: NextRequest) {
   const session = await auth();

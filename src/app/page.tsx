@@ -11,6 +11,7 @@ import {
 import { LoginCard } from "@/components/login-card";
 import { SignOutButton } from "@/components/sign-out";
 import { NavBar } from "@/components/navbar";
+import { createClient } from "@/utils/supabase/server";
 
 export default async function Home() {
   const session = await auth();
